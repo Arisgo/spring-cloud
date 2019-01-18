@@ -1,0 +1,20 @@
+spring:
+#  application:
+#    name: arisgo-service
+  cloud:
+    refresh:
+      enabled: true
+    config:
+      label: master
+      uri: http://localhost:8200/
+      profile: user
+      name: arisgo-service
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

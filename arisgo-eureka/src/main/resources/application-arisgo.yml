@@ -1,0 +1,15 @@
+server:
+  port: 8101
+spring:
+  application:
+    name: arisgo-eureka
+eureka:
+  instance:
+    hostname: arisgo
+  client:
+    serviceUrl:
+      defaultZone: http://service:8102/eureka,http://silencer:8103/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  server:
+    enable-self-preservation: false

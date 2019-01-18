@@ -1,0 +1,15 @@
+server:
+  port: 8103
+spring:
+  application:
+    name: arisgo-eureka
+eureka:
+  instance:
+    hostname: silencer
+  client:
+    serviceUrl:
+      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  server:
+    enable-self-preservation: false

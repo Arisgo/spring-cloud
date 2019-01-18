@@ -1,0 +1,25 @@
+server:
+  port: 8200
+spring:
+  application:
+    name: arisgo-config
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          searchPaths: repository
+          username: arisgo@163.com
+          password: zjxy26102425
+      label: master
+    refresh:
+      enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka

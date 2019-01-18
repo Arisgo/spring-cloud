@@ -4,6 +4,9 @@ spring:
   application:
     name: arisgo-config
   cloud:
+    bus:
+      refresh:
+        enabled: true
     config:
       server:
         git:
@@ -12,8 +15,6 @@ spring:
           username: arisgo@163.com
           password: zjxy26102425
       label: master
-    refresh:
-      enabled: true
   rabbitmq:
     host: localhost
     port: 5672

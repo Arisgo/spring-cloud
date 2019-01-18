@@ -2,13 +2,14 @@ spring:
 #  application:
 #    name: arisgo-service
   cloud:
-    refresh:
-      enabled: true
     config:
       label: master
       uri: http://localhost:8200/
       profile: user
       name: arisgo-service
+    bus:
+      refresh:
+        enabled: true
 #eureka:
 #  client:
 #    serviceUrl:

@@ -3,6 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>arisgo-config</artifactId>
+    <name>arisgo-config</name>
+    <description>Demo project for Spring Cloud Config</description>
+
     <parent>
         <groupId>com.arisgo.springcloud</groupId>
         <artifactId>spring-cloud</artifactId>
@@ -10,16 +14,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.arisgo.springcloud</groupId>
-    <artifactId>arisgo-config</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>arisgo-config</name>
-    <description>Demo project for Spring Cloud Config</description>
-
     <dependencies>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

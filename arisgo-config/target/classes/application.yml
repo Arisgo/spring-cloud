@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/Arisgo/spring-cloud.git
           searchPaths: repository
           username: arisgo@163.com
           password: zjxy26102425
@@ -23,3 +23,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

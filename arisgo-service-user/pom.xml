@@ -3,17 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>arisgo-service-user</artifactId>
-    <name>arisgo-service-user</name>
-    <packaging>jar</packaging>
-    <description>Demo project for Spring Cloud Service User</description>
-
     <parent>
         <groupId>com.arisgo.springcloud</groupId>
         <artifactId>arisgo-service</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <artifactId>arisgo-service-user</artifactId>
+    <name>arisgo-service-user</name>
+    <packaging>jar</packaging>
+    <description>Demo project for Spring Cloud Service User</description>
 
     <dependencies>
         <dependency>

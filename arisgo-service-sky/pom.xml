@@ -5,20 +5,21 @@
 
     <parent>
         <groupId>com.arisgo.springcloud</groupId>
-        <artifactId>spring-cloud</artifactId>
+        <artifactId>arisgo-service</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>arisgo-eureka</artifactId>
-    <name>arisgo-eureka</name>
+    <artifactId>arisgo-service-sky</artifactId>
+    <name>arisgo-service-sky</name>
     <packaging>jar</packaging>
-    <description>Demo project for Spring Cloud Eureka</description>
+    <description>Demo project for Spring Cloud Sky</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <groupId>com.arisgo.springcloud</groupId>
+            <artifactId>arisgo-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

@@ -1,12 +1,12 @@
 spring:
-#  application:
-#    name: arisgo-service
+  application:
+    name: arisgo-service-user
   cloud:
     config:
       label: master
       uri: http://localhost:8200/
-      profile: dev
-      name: application
+      profile: user
+      name: arisgo-service
     bus:
       refresh:
         enabled: true

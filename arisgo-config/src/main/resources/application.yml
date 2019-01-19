@@ -11,8 +11,8 @@ spring:
       server:
         git:
           uri: https://github.com/Arisgo/spring-cloud.git
-#          searchPaths: repository
-          searchPaths: repository/{application}-path
+          searchPaths: repository
+#          searchPaths: repository/{application}-path
           username: arisgo@163.com
           password: zjxy26102425
 #          default-label: origin/master

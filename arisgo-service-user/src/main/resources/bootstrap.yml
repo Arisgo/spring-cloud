@@ -5,7 +5,7 @@ spring:
     config:
       label: master
       uri: http://localhost:8200/
-      profile: user
+      profile: dev
       name: arisgo-service
     bus:
       refresh:

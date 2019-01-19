@@ -1,8 +1,8 @@
 server:
-  port: 8300
+  port: 8301
 spring:
   application:
-    name: arisgo-service-user
+    name: arisgo-test
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 5

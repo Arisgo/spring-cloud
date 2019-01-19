@@ -6,7 +6,7 @@ spring:
       label: master
       uri: http://localhost:8200/
       profile: dev
-      name: arisgo-service
+      name: application
     bus:
       refresh:
         enabled: true

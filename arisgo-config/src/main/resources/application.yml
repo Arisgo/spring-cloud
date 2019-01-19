@@ -12,10 +12,10 @@ spring:
         git:
           uri: https://github.com/Arisgo/spring-cloud.git
 #          searchPaths: repository
-          searchPaths: repository/{application}
+          searchPaths: repository/{application}-path
           username: arisgo@163.com
           password: zjxy26102425
-          default-label: origin/master
+#          default-label: origin/master
       label: master
   rabbitmq:
     host: localhost

@@ -1,6 +1,6 @@
 spring:
-  application:
-    name: arisgo-service-user
+#  application:
+#    name: arisgo-service-user
   cloud:
     config:
       label: master

@@ -1,6 +1,6 @@
 spring:
-#  application:
-#    name: arisgo-service-user
+  application:
+    name: arisgo-service-user
   cloud:
     config:
       label: master
@@ -10,10 +10,6 @@ spring:
     bus:
       refresh:
         enabled: true
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
 management:
   endpoints:
     web:

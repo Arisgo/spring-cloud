@@ -1,8 +1,8 @@
 server:
   port: 8300
-spring:
-  application:
-    name: arisgo-service-user
+#spring:
+#  application:
+#    name: arisgo-service-user
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 5
@@ -10,4 +10,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
-color: arisgo-service-user

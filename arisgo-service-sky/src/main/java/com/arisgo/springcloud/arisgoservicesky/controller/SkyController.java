@@ -1,4 +1,4 @@
-package com.arisgo.springcloud.service.user.controller;
+package com.arisgo.springcloud.arisgoservicesky.controller;
 
 import com.arisgo.springcloud.service.model.Result;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @version 1.0
  * @auther Silencer
- * @date 2019-01-19 1:39
+ * @date 2019-01-19 21:21
  */
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/sky")
 @RefreshScope
-public class UserController {
+public class SkyController {
 
     @Value("${server.port}")
     private String port;
@@ -23,7 +23,7 @@ public class UserController {
     private String applicationName;
 
     @RequestMapping("/hello")
-    public Result hello() {
+    public Result skyHello() {
         String msg = "Hello " + applicationName + "; Your port is " + port;
         return Result.success(msg);
     }

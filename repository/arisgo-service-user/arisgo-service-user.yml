@@ -10,4 +10,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
-color: blue

@@ -1,8 +1,13 @@
 server:
   port: 8300
-#spring:
+spring:
 #  application:
 #    name: arisgo-service-user
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/silencer
+    dataUsername: root
+    dataPassword: sa
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 5

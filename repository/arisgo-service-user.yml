@@ -4,7 +4,7 @@ spring:
 #  application:
 #    name: arisgo-service-user
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/silencer
     dataUsername: root
     dataPassword: sa
@@ -15,3 +15,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
+mybatis:
+  mapperLocations: classpath:mapper/*.xml

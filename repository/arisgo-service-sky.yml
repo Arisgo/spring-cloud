@@ -5,7 +5,7 @@ spring:
 #    name: arisgo-service-sky
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/silencer
+    url: jdbc:mysql://localhost:3306/silencer?useUnicode=true&characterEncoding=utf-8&useSSL=true
     dataUsername: root
     dataPassword: sa
 eureka:

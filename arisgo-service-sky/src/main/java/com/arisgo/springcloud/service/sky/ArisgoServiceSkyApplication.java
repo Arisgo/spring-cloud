@@ -1,4 +1,4 @@
-package com.arisgo.springcloud.arisgoservicesky;
+package com.arisgo.springcloud.service.sky;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

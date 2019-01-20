@@ -1,4 +1,4 @@
-package com.arisgo.springcloud.arisgoservicesky;
+package com.arisgo.springcloud.service.sky;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

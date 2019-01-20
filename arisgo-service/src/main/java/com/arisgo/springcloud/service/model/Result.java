@@ -12,22 +12,22 @@ public class Result {
     private boolean flag;
     private String code;
     private String msg;
-    private Object object;
+    private Object data;
 
     public static Result success() {
         return success(null);
     }
 
-    public static Result success(Object object) {
-        return success("1", "响应成功！", object);
+    public static Result success(Object data) {
+        return success("1", "请求成功！", data);
     }
 
-    public static Result success(String code, String msg, Object object) {
-        return getInstance(true, code, msg, object);
+    public static Result success(String code, String msg, Object data) {
+        return newInstance(true, code, msg, data);
     }
 
     public static Result error() {
-        return error("响应失败！");
+        return error("请求失败！");
     }
 
     public static Result error(String msg) {
@@ -38,30 +38,25 @@ public class Result {
         return error(code, msg, null);
     }
 
-    public static Result error(String code, String msg, Object object) {
-        return getInstance(false, code, msg, object);
+    public static Result error(String code, String msg, Object data) {
+        return newInstance(false, code, msg, data);
     }
 
-    private static Result getInstance(boolean flag, String code, String msg, Object object) {
-        if (ObjectUtils.isEmpty(object)) {
-            object = "{}";
+    private static Result newInstance(boolean flag, String code, String msg, Object data) {
+        if (ObjectUtils.isEmpty(data)) {
+            data = "{}";
         }
-        Result result = new Result();
-        result.setFlag(flag);
-        result.setCode(code);
-        result.setMsg(msg);
-        result.setObject(object);
-        return result;
+        return new Result(flag, code, msg, data);
     }
 
     public Result() {
     }
 
-    public Result(boolean flag, String code, String msg, Object object) {
+    public Result(boolean flag, String code, String msg, Object data) {
         this.flag = flag;
         this.code = code;
         this.msg = msg;
-        this.object = object;
+        this.data = data;
     }
 
     public boolean isFlag() {
@@ -88,11 +83,11 @@ public class Result {
         this.msg = msg;
     }
 
-    public Object getObject() {
-        return object;
+    public Object getData() {
+        return data;
     }
 
-    public void setObject(Object object) {
-        this.object = object;
+    public void setData(Object data) {
+        this.data = data;
     }
 }

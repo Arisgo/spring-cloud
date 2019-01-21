@@ -8,7 +8,7 @@ eureka:
     hostname: service
   client:
     serviceUrl:
-      defaultZone: http://arisgo:8101/eureka,http://silencer:8103/eureka
+      defaultZone: http://arisgo:8101/eureka
     register-with-eureka: true
     fetch-registry: true
   server:

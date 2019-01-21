@@ -5,7 +5,7 @@ spring:
 #    name: arisgo-service-user
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/silencer?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    url: jdbc:mysql://127.0.0.1:3306/arisgo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC&useSSL=false
     dataUsername: root
     dataPassword: sa
 eureka:
@@ -14,6 +14,6 @@ eureka:
     lease-expiration-duration-in-seconds: 10
   client:
     serviceUrl:
-      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
+      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka
 mybatis:
   mapperLocations: classpath:dao/*.xml

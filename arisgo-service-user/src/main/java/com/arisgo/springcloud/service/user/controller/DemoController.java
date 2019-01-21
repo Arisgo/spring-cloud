@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019-01-19 1:39
  */
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("/user/demo")
 @RefreshScope
 public class DemoController {
 

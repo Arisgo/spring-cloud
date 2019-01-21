@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @FeignClient("arisgo-service-sky")
 public interface UserFacade {
 
-    @GetMapping("/user/getUser")
+    @GetMapping("/sky/user/getUser")
     Result getUser();
 }

@@ -9,7 +9,7 @@
 #  application:
 #    name: arisgo-service-user
 #mybatis:
-#  mapperLocations: classpath:dao/*.xml
+#  mapperLocations: classpath:mapper/*.xml
 #eureka:
 #  instance:
 #    lease-renewal-interval-in-seconds: 5

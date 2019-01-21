@@ -1,4 +1,4 @@
-package com.arisgo.springcloud.service.sky.dao;
+package com.arisgo.springcloud.service.sky.mapper;
 
 import com.arisgo.springcloud.service.sky.model.User;
 import org.apache.ibatis.annotations.Mapper;

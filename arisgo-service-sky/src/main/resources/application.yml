@@ -9,11 +9,12 @@
 #  application:
 #    name: arisgo-service-sky
 #mybatis:
-#  mapperLocations: classpath:dao/*.xml
-#eureka:
-#  instance:
-#    lease-renewal-interval-in-seconds: 5
-#    lease-expiration-duration-in-seconds: 10
-#  client:
-#    serviceUrl:
-#      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka,http://silencer:8103/eureka
+#  mapperLocations: classpath:mapper/*.xml
+#  typeAliasesPackage: com.arisgo.springcloud.service.sky.mapper
+##eureka:
+##  instance:
+##    lease-renewal-interval-in-seconds: 5
+##    lease-expiration-duration-in-seconds: 10
+##  client:
+##    serviceUrl:
+##      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka

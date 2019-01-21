@@ -16,4 +16,4 @@ eureka:
     serviceUrl:
       defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka
 mybatis:
-  mapperLocations: classpath:dao/*.xml
+  mapperLocations: classpath:mapper/*.xml

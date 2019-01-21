@@ -8,14 +8,23 @@ import java.util.Date;
  * @version 1.0
  * @date 2019-01-21 10:27
  */
-public class BaseModel implements Serializable {
+public class BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 5501958871667110457L;
 
+    private String status;
     private String createBy;
     private Date createDt;
     private String updateBy;
     private Date updateDt;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getCreateBy() {
         return createBy;

@@ -3,7 +3,14 @@
 <mapper namespace="com.arisgo.springcloud.service.sky.mapper.UserMapper">
 
     <select id="getUser" resultType="com.arisgo.springcloud.service.sky.model.User">
-        select user_id userId, user_name userName, password password, real_name realName, nick_name nickName, status status from sys_user
+        select user_id userId,
+               user_name userName,
+               password password,
+               real_name realName,
+               nick_name nickName,
+               status status
+          from sys_user
+         where status = 1
     </select>
 
 </mapper>

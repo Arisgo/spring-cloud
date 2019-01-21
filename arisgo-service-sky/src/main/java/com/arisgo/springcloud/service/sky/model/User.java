@@ -1,20 +1,19 @@
 package com.arisgo.springcloud.service.sky.model;
 
-import com.arisgo.springcloud.service.model.BaseModel;
+import com.arisgo.springcloud.service.model.BaseEntity;
 
 /**
  * @version 1.0
  * @auther Silencer
  * @date 2019-01-20 10:11
  */
-public class User extends BaseModel {
+public class User extends BaseEntity {
 
     private Integer userId;
     private String userName;
     private String password;
     private String realName;
     private String nickName;
-    private String status;
 
     public Integer getUserId() {
         return userId;
@@ -56,11 +55,4 @@ public class User extends BaseModel {
         this.nickName = nickName;
     }
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 }

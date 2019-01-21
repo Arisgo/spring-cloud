@@ -18,10 +18,10 @@ import javax.annotation.Resource;
 public class UserController {
 
     @Resource
-    private UserService userService;
+    private UserService userServiceImpl;
 
     @GetMapping(value = "/getUser", produces = "application/json")
     public Result getUser() {
-        return userService.getUser();
+        return userServiceImpl.getUser();
     }
 }

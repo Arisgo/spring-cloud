@@ -17,3 +17,4 @@ eureka:
       defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka
 mybatis:
   mapperLocations: classpath:dao/*.xml
+  typeAliasesPackage: com.arisgo.springcloud.service.sky.dao

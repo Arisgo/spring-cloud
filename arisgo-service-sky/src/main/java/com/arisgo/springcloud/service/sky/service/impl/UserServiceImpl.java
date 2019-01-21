@@ -1,7 +1,7 @@
 package com.arisgo.springcloud.service.sky.service.impl;
 
-import com.arisgo.springcloud.service.model.Result;
-import com.arisgo.springcloud.service.sky.mapper.UserMapper;
+import com.arisgo.springcloud.service.utils.Result;
+import com.arisgo.springcloud.service.sky.dao.UserMapper;
 import com.arisgo.springcloud.service.sky.model.User;
 import com.arisgo.springcloud.service.sky.service.UserService;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.arisgo.springcloud.service.user.controller;
 
-import com.arisgo.springcloud.service.model.Result;
+import com.arisgo.springcloud.service.utils.Result;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;

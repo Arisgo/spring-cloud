@@ -1,6 +1,6 @@
 package com.arisgo.springcloud.service.sky.service;
 
-import com.arisgo.springcloud.service.model.Result;
+import com.arisgo.springcloud.service.utils.Result;
 
 /**
  * @author Silencer

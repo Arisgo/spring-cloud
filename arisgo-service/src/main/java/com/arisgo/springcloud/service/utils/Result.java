@@ -1,4 +1,4 @@
-package com.arisgo.springcloud.service.model;
+package com.arisgo.springcloud.service.utils;
 
 import org.springframework.util.ObjectUtils;
 

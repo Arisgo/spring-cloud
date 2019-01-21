@@ -1,21 +1,20 @@
 package com.arisgo.springcloud.service.sky.model;
 
+import com.arisgo.springcloud.service.model.BaseModel;
+
 /**
  * @version 1.0
  * @auther Silencer
  * @date 2019-01-20 10:11
  */
-public class User {
+public class User extends BaseModel {
 
     private Integer userId;
     private String userName;
     private String password;
     private String realName;
-    private String state;
-    private String createBy;
-    private String createDt;
-    private String updateBy;
-    private String updateDt;
+    private String nickName;
+    private String status;
 
     public Integer getUserId() {
         return userId;
@@ -49,43 +48,19 @@ public class User {
         this.realName = realName;
     }
 
-    public String getState() {
-        return state;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
-    public String getCreateBy() {
-        return createBy;
+    public String getStatus() {
+        return status;
     }
 
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
-    }
-
-    public String getCreateDt() {
-        return createDt;
-    }
-
-    public void setCreateDt(String createDt) {
-        this.createDt = createDt;
-    }
-
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
-    }
-
-    public String getUpdateDt() {
-        return updateDt;
-    }
-
-    public void setUpdateDt(String updateDt) {
-        this.updateDt = updateDt;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

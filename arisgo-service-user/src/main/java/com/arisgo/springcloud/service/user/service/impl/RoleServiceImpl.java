@@ -4,7 +4,7 @@ import com.arisgo.springcloud.service.user.facade.user.UserFacade;
 import com.arisgo.springcloud.service.user.mapper.RoleMapper;
 import com.arisgo.springcloud.service.user.model.Role;
 import com.arisgo.springcloud.service.user.service.RoleService;
-import com.arisgo.springcloud.service.utils.BaseService;
+import com.arisgo.springcloud.service.base.BaseService;
 import com.arisgo.springcloud.service.utils.Result;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.stereotype.Service;

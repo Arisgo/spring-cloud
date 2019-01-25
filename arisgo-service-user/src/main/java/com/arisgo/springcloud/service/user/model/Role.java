@@ -1,6 +1,6 @@
 package com.arisgo.springcloud.service.user.model;
 
-import com.arisgo.springcloud.service.model.BaseEntity;
+import com.arisgo.springcloud.service.base.BaseEntity;
 
 /**
  * @author Silencer

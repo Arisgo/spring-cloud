@@ -1,20 +1,32 @@
-#server:
-#  port: 8400
-#spring:
-#  datasource:
-#    driverClassName: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://127.0.0.1:3306/arisgo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC&useSSL=false
-#    username: root
-#    password: sa
-#  application:
-#    name: arisgo-service-sky
-#mybatis:
-#  mapperLocations: classpath:mapper/*.xml
-#  typeAliasesPackage: com.arisgo.springcloud.service.sky.mapper
-##eureka:
-##  instance:
-##    lease-renewal-interval-in-seconds: 5
-##    lease-expiration-duration-in-seconds: 10
-##  client:
-##    serviceUrl:
-##      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka
+server:
+  port: 8400
+spring:
+  application:
+    name: arisgo-service-sky
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/arisgo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC&useSSL=false
+    username: root
+    password: sa
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: redisDemo
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 10000
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.arisgo.springcloud.service.sky.mapper
+#eureka:
+#  instance:
+#    lease-renewal-interval-in-seconds: 5
+#    lease-expiration-duration-in-seconds: 10
+#  client:
+#    serviceUrl:
+#      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka

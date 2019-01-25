@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.arisgo.springcloud.service.sky.mapper.UserMapper">
 
-    <select id="getUser" resultType="com.arisgo.springcloud.service.sky.model.User">
+    <select id="getList" parameterType="com.arisgo.springcloud.service.sky.model.User" resultType="com.arisgo.springcloud.service.sky.model.User">
         select user_id userId,
                user_name userName,
                password password,
@@ -11,6 +11,44 @@
                status status
           from sys_user
          where status = 1
+      order by userId desc
     </select>
+
+    <select id="getEntityById" parameterType="java.lang.String" resultType="com.arisgo.springcloud.service.sky.model.User">
+        select user_id userId,
+               user_name userName,
+               password password,
+               real_name realName,
+               nick_name nickName,
+               status status
+          from sys_user
+         where status = 1
+           and user_id = #{value, jdbcType=VARCHAR}
+    </select>
+
+    <insert id="insert" parameterType="com.arisgo.springcloud.service.sky.model.User" useGeneratedKeys="true" keyProperty="userId">
+        insert into sys_user(
+                    user_name,
+                    password,
+                    real_name,
+                    nick_name)
+             values (
+                    #{userName, jdbcType=VARCHAR},
+                    #{password, jdbcType=VARCHAR},
+                    #{realName, jdbcType=VARCHAR},
+                    #{nickName, jdbcType=VARCHAR})
+    </insert>
+    <!--/*,
+    #{status, jdbcType=VARCHAR},
+    #{createBy, jdbcType=INTEGER},
+    #{createDt, jdbcType=TIMESTAMP},
+    #{updateBy, jdbcType=INTEGER},
+    #{updateDt, jdbcType=TIMESTAMP}*/
+    /*,
+    status,
+    create_by,
+    create_dt,
+    update_by,
+    update_dt*/-->
 
 </mapper>

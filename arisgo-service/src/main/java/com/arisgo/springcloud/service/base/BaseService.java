@@ -1,6 +1,9 @@
-package com.arisgo.springcloud.service.utils;
+package com.arisgo.springcloud.service.base;
 
-import com.arisgo.springcloud.service.model.BaseEntity;
+import com.arisgo.springcloud.service.enums.SysCodeEnum;
+import com.arisgo.springcloud.service.base.BaseEntity;
+import com.arisgo.springcloud.service.utils.Page;
+import com.arisgo.springcloud.service.utils.Result;
 import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 
@@ -34,6 +37,6 @@ public class BaseService {
     }
 
     public Result exception() {
-        return Result.error("系统异常！请联系管理员！");
+        return SysCodeEnum.SYS_EXCEPTION.converResult();
     }
 }

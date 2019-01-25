@@ -2,18 +2,17 @@ package com.arisgo.springcloud.service.sky.controller;
 
 import com.arisgo.springcloud.service.utils.Result;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @version 1.0
  * @author Silencer
+ * @version 1.0
  * @date 2019-01-19 21:21
  */
 @RestController
-@RequestMapping("/sky/demo")
-@RefreshScope
+@RequestMapping("/demo")
+//@RefreshScope
 public class DemoController {
 
     @Value("${server.port}")

@@ -1,17 +1,17 @@
-spring:
-  application:
-    name: arisgo-service-user
-  cloud:
-    config:
-      label: master
-      uri: http://localhost:8200/
-      profile: user
-      name: arisgo-service
-    bus:
-      refresh:
-        enabled: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
+#spring:
+#  application:
+#    name: arisgo-service-user
+#  cloud:
+#    config:
+#      label: master
+#      uri: http://localhost:8200/
+#      profile: user
+#      name: arisgo-service
+#    bus:
+#      refresh:
+#        enabled: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: bus-refresh

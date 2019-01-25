@@ -2,12 +2,16 @@ package com.arisgo.springcloud.service.utils;
 
 import org.springframework.util.ObjectUtils;
 
+import java.io.Serializable;
+
 /**
  * @version 1.0
- * @auther Silencer
+ * @author Silencer
  * @date 2019-01-19 0:03
  */
-public class Result {
+public class Result implements Serializable {
+
+    private static final long serialVersionUID = -4418955999573081282L;
 
     private boolean flag;
     private String code;
@@ -43,9 +47,6 @@ public class Result {
     }
 
     private static Result newInstance(boolean flag, String code, String msg, Object data) {
-        if (ObjectUtils.isEmpty(data)) {
-            data = "{}";
-        }
         return new Result(flag, code, msg, data);
     }
 
@@ -53,6 +54,9 @@ public class Result {
     }
 
     public Result(boolean flag, String code, String msg, Object data) {
+        if (ObjectUtils.isEmpty(data)) {
+            data = "{}";
+        }
         this.flag = flag;
         this.code = code;
         this.msg = msg;

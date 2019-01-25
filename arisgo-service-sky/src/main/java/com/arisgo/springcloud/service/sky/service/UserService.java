@@ -1,5 +1,6 @@
 package com.arisgo.springcloud.service.sky.service;
 
+import com.arisgo.springcloud.service.sky.model.User;
 import com.arisgo.springcloud.service.utils.Result;
 
 /**
@@ -10,4 +11,10 @@ import com.arisgo.springcloud.service.utils.Result;
 public interface UserService {
 
     Result getUser();
+
+    Result insert(User user);
+
+    Result getRedis(String id);
+
+
 }

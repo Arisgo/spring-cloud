@@ -1,4 +1,4 @@
-package com.arisgo.springcloud.service.model;
+package com.arisgo.springcloud.service.base;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -1,13 +1,15 @@
 package com.arisgo.springcloud.service.sky.model;
 
-import com.arisgo.springcloud.service.model.BaseEntity;
+import com.arisgo.springcloud.service.base.BaseEntity;
 
 /**
  * @version 1.0
- * @auther Silencer
+ * @author Silencer
  * @date 2019-01-20 10:11
  */
 public class User extends BaseEntity {
+
+    private static final long serialVersionUID = 5746509939062256448L;
 
     private Integer userId;
     private String userName;
@@ -55,4 +57,14 @@ public class User extends BaseEntity {
         this.nickName = nickName;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", realName='" + realName + '\'' +
+                ", nickName='" + nickName + '\'' +
+                '}';
+    }
 }

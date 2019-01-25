@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * @date 2019-01-21 14:24
  */
 @RestController
-@RequestMapping("/user/role")
+@RequestMapping("/role")
 public class RoleController {
 
     @Resource

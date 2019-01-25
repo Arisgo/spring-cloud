@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @version 1.0
- * @auther Silencer
+ * @author Silencer
  * @date 2019-01-19 1:39
  */
 @RestController
-@RequestMapping("/user/demo")
+@RequestMapping("/demo")
 @RefreshScope
 public class DemoController {
 

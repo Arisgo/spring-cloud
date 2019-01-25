@@ -1,17 +1,17 @@
-spring:
-  application:
-    name: arisgo-service-sky
-  cloud:
-    bus:
-      refresh:
-        enabled: true
-    config:
-      uri: http://localhost:8200/
-      label: master
-      name: arisgo-service
-      profile: sky
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
+#spring:
+#  application:
+#    name: arisgo-service-sky
+#  cloud:
+#    bus:
+#      refresh:
+#        enabled: true
+#    config:
+#      uri: http://localhost:8200/
+#      label: master
+#      name: arisgo-service
+#      profile: sky
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: bus-refresh

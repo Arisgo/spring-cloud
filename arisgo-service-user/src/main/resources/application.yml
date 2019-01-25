@@ -1,19 +1,19 @@
-#server:
-#  port: 8300
-#spring:
-#  datasource:
-#    driverClassName: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://127.0.0.1:3306/silencer?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC&useSSL=false
-#    username: root
-#    password: sa
-#  application:
-#    name: arisgo-service-user
-#mybatis:
-#  mapperLocations: classpath:mapper/*.xml
-#eureka:
-#  instance:
-#    lease-renewal-interval-in-seconds: 5
-#    lease-expiration-duration-in-seconds: 10
-#  client:
-#    serviceUrl:
-#      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka
+server:
+  port: 8300
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/silencer?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC&useSSL=false
+    username: root
+    password: sa
+  application:
+    name: arisgo-service-user
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://arisgo:8101/eureka,http://service:8102/eureka
